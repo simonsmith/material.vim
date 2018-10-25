@@ -25,7 +25,7 @@ elseif g:material_theme_style == 'dark'
   let s:gray1 = '#212121'
 endif
 
-let s:gray2     = g:material_theme_style == 'dark' ? '#292929' : '#2c3a41'
+let s:gray2     = g:material_theme_style == 'dark' ? '#292929' : '#3B4252'
 let s:gray3     = g:material_theme_style == 'dark' ? '#474646' : '#425762'
 let s:gray4     = g:material_theme_style == 'dark' ? '#6a6c6c' : '#658494'
 let s:gray5     = g:material_theme_style == 'dark' ? '#b7bdc0' : '#aebbc5'
@@ -46,7 +46,7 @@ function! s:HL(group, fg, bg, attr)
 
   if !empty(a:fg)
       exec 'hi ' . a:group . ' guifg=' . a:fg
-  endif
+    endif
   if !empty(a:bg)
     exec 'hi ' . a:group . ' guibg=' . a:bg
   endif
@@ -56,10 +56,10 @@ function! s:HL(group, fg, bg, attr)
 endfun
 
 " Vim Editor
-call s:HL('ColorColumn',                    '',         s:gray3,    '')
+call s:HL('ColorColumn',                    '',         '#373d4c',    '')
 call s:HL('Cursor',                         s:gray2,    s:gray5,    '')
 call s:HL('CursorColumn',                   '',         s:gray2,    '')
-call s:HL('CursorLine',                     '',         s:gray2,    'none')
+call s:HL('CursorLine',                     '',         '#373d4c',    'none')
 call s:HL('CursorLineNr',                   s:cyan,     s:gray2,    'none')
 call s:HL('Directory',                      s:blue,     '',         '')
 call s:HL('DiffAdd',                        s:green,    s:gray2,    'none')
@@ -71,7 +71,7 @@ call s:HL('FoldColumn',                     s:gray4,    s:gray1,    '')
 call s:HL('Folded',                         s:gray3,    s:gray1,    '')
 call s:HL('IncSearch',                      s:yellow,   '',         '')
 call s:HL('LineNr',                         s:gray3,    '',         '')
-call s:HL('MatchParen',                     s:gray4,    s:cyan,     'bold')
+call s:HL('MatchParen',                     s:gray4,    s:gray1,     'bold')
 call s:HL('ModeMsg',                        s:green,    '',         '')
 call s:HL('MoreMsg',                        s:green,    '',         '')
 call s:HL('NonText',                        s:gray4,    '',         'none')
@@ -88,11 +88,11 @@ call s:HL('SpellCap',                       s:blue,     s:gray2,    'undercurl')
 call s:HL('SpellBad',                       s:red,      s:gray2,    'undercurl')
 call s:HL('StatusLine',                     s:gray5,    s:gray3,    'none')
 call s:HL('StatusLineNC',                   s:gray2,    s:gray4,    '')
-call s:HL('TabLine',                        s:gray4,    s:gray2,    'none')
+call s:HL('TabLine',                        s:gray4,    s:gray1,    'none')
 call s:HL('TabLineFill',                    s:gray4,    s:gray2,    'none')
 call s:HL('TabLineSel',                     s:yellow,   s:gray3,    'none')
 call s:HL('Title',                          s:green,    '',         'none')
-call s:HL('VertSplit',                      s:gray4,    s:gray1,    'none')
+call s:HL('VertSplit',                      s:gray2,    s:gray1,    'none')
 call s:HL('Visual',                         s:gray5,    s:gray3,    '')
 call s:HL('WarningMsg',                     s:red,      '',         '')
 call s:HL('WildMenu',                       s:gray2,    s:cyan,	    '')
