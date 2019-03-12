@@ -246,8 +246,8 @@ hi link SignifySignDelete GitGutterDelete
 " XML
 call s:HL('xmlAttrib',                      s:yellow,   '',         'italic')
 call s:HL('xmlEndTag',                      s:blue,     '',         '')
-call s:HL('xmlTag',                         s:blue,     '',         '')
-call s:HL('xmlTagName',                     s:blue,     '',         '')
+call s:HL('xmlTag',                         s:red,     '',         '')
+call s:HL('xmlTagName',                     s:red,     '',         '')
 
 " Neovim terminal colors
 if has('nvim')
