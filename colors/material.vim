@@ -249,6 +249,9 @@ call s:HL('xmlEndTag',                      s:blue,     '',         '')
 call s:HL('xmlTag',                         s:red,     '',         '')
 call s:HL('xmlTagName',                     s:red,     '',         '')
 
+" JSX
+call s:HL('jsxRegion',                     s:gray4,     '',         '')
+
 " Neovim terminal colors
 if has('nvim')
     let g:terminal_color_0 = s:gray1
