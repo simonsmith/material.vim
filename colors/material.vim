@@ -228,6 +228,10 @@ call s:HL('sassClassChar',                  s:yellow,   '',         '')
 call s:HL('sassMixinName',                  s:blue,     '',         '')
 call s:HL('sassVariable',                   s:purple,   '',         '')
 
+" Tsx
+call s:HL('tsxTagName',                     s:blue,      '',         '')
+call s:HL('tsxCloseString',                 s:blue,      '',         '')
+
 " Vim-Fugitive
 call s:HL('diffAdded',                      s:green,    '',         '')
 call s:HL('diffRemoved',                    s:red,      '',         '')
