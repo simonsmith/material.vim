@@ -242,6 +242,9 @@ call s:HL('GitGutterChange',                s:yellow,   '',         '')
 call s:HL('GitGutterChangeDelete',          s:orange,   '',         '')
 call s:HL('GitGutterDelete',                s:red,      '',         '')
 
+" TypeScript
+call s:HL('typescriptBraces',                   s:gray5,    '',         '')
+
 " Vim-Signify
 hi link SignifySignAdd GitGutterAdd
 hi link SignifySignChange GitGutterChange
