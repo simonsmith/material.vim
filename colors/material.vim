@@ -20,7 +20,7 @@ let g:material_theme_style = get(g:, 'material_theme_style', 'default')
 if g:material_theme_style == 'default'
   let s:gray1 = '#263238'
 elseif g:material_theme_style == 'palenight'
-  let s:gray1 = '#292D3E'
+  let s:gray1 = '#1E1C31'
 elseif g:material_theme_style == 'dark'
   let s:gray1 = '#212121'
 endif
@@ -33,7 +33,7 @@ let s:red       = '#ff5370'
 let s:green     = '#c3e88d'
 let s:yellow    = '#ffcb6b'
 let s:blue      = '#82aaff'
-let s:purple    = '#c792ea'
+let s:purple    = '#D4BFFF'
 let s:cyan      = '#89ddff'
 let s:orange    = '#f78c6c'
 let s:indigo    = '#BB80B3'
@@ -56,11 +56,11 @@ function! s:HL(group, fg, bg, attr)
 endfun
 
 " Vim Editor
-call s:HL('ColorColumn',                    '',         '#2e3447',    '')
+call s:HL('ColorColumn',                    '',         '#2D2B40',    '')
 call s:HL('Cursor',                         s:gray2,    s:gray5,    '')
 call s:HL('CursorColumn',                   '',         s:gray2,    '')
-call s:HL('CursorLine',                     '',         '#2e3447',    'none')
-call s:HL('CursorLineNr',                   s:cyan,     '#2e3447',    'none')
+call s:HL('CursorLine',                     '',         '#2D2B40',    'none')
+call s:HL('CursorLineNr',                   s:cyan,     '#2D2B40',    'none')
 call s:HL('Directory',                      s:blue,     '',         '')
 call s:HL('DiffAdd',                        s:green,    s:gray2,    'none')
 call s:HL('DiffChange',                     s:yellow,   s:gray2,    'none')
@@ -93,7 +93,7 @@ call s:HL('TabLine',                        s:gray4,    s:gray1,    'none')
 call s:HL('TabLineFill',                    s:gray4,    s:gray2,    'none')
 call s:HL('TabLineSel',                     s:yellow,   s:gray3,    'none')
 call s:HL('Title',                          s:green,    '',         'none')
-call s:HL('VertSplit',                      s:gray2,    s:gray1,    'none')
+call s:HL('VertSplit',                      '#2D2B40',    s:gray1,    'none')
 call s:HL('Visual',                         s:gray5,    s:gray3,    '')
 call s:HL('WarningMsg',                     s:red,      '',         '')
 call s:HL('WildMenu',                       s:gray2,    s:cyan,	    '')
