@@ -33,10 +33,10 @@ let s:red       = '#ff5370'
 let s:green     = '#c3e88d'
 let s:yellow    = '#ffcb6b'
 let s:blue      = '#82aaff'
-let s:purple    = '#D4BFFF'
+let s:purple    = '#b59aed'
 let s:cyan      = '#89ddff'
 let s:orange    = '#f78c6c'
-let s:indigo    = '#BB80B3'
+let s:indigo    = '#b59aed'
 
 function! s:HL(group, fg, bg, attr)
   let l:attr = a:attr
@@ -244,6 +244,7 @@ call s:HL('GitGutterDelete',                s:red,      '',         '')
 
 " TypeScript
 call s:HL('typescriptBraces',                   s:gray5,    '',         '')
+call s:HL('typescriptObjectLabel',              s:gray5,    '',         '')
 
 " Vim-Signify
 hi link SignifySignAdd GitGutterAdd
