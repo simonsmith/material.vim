@@ -13,22 +13,14 @@ endif
 set background=dark
 let g:colors_name = 'material'
 
-let g:material_terminal_italics = get(g:, 'material_terminal_italics', 0)
-let g:material_theme_style = get(g:, 'material_theme_style', 'default')
+let g:material_terminal_italics = get(g:, 'material_terminal_italics', 1)
 
-" Color Palette
-if g:material_theme_style == 'default'
-  let s:gray1 = '#263238'
-elseif g:material_theme_style == 'palenight'
-  let s:gray1 = '#1E1C31'
-elseif g:material_theme_style == 'dark'
-  let s:gray1 = '#212121'
-endif
-
-let s:gray2     = g:material_theme_style == 'dark' ? '#292929' : '#3B4252'
-let s:gray3     = g:material_theme_style == 'dark' ? '#474646' : '#425762'
-let s:gray4     = g:material_theme_style == 'dark' ? '#6a6c6c' : '#658494'
-let s:gray5     = g:material_theme_style == 'dark' ? '#b7bdc0' : '#aebbc5'
+let s:gray1     = '#1E1C31'
+let s:gray2     = '#3B4252'
+let s:gray3     = '#425762'
+let s:gray4     = '#658494'
+let s:gray5     = '#aebbc5'
+let s:gray6     = '#2D2B40'
 let s:red       = '#ff5370'
 let s:green     = '#c3e88d'
 let s:yellow    = '#ffcb6b'
@@ -56,11 +48,11 @@ function! s:HL(group, fg, bg, attr)
 endfun
 
 " Vim Editor
-call s:HL('ColorColumn',                    '',         '#2D2B40',    '')
+call s:HL('ColorColumn',                    '',         s:gray6,    '')
 call s:HL('Cursor',                         s:gray2,    s:gray5,    '')
 call s:HL('CursorColumn',                   '',         s:gray2,    '')
-call s:HL('CursorLine',                     '',         '#2D2B40',    'none')
-call s:HL('CursorLineNr',                   s:cyan,     '#2D2B40',    'none')
+call s:HL('CursorLine',                     '',         s:gray6,    'none')
+call s:HL('CursorLineNr',                   s:cyan,     s:gray6,    'none')
 call s:HL('Directory',                      s:blue,     '',         '')
 call s:HL('DiffAdd',                        s:green,    s:gray2,    'none')
 call s:HL('DiffChange',                     s:yellow,   s:gray2,    'none')
@@ -77,7 +69,7 @@ call s:HL('ModeMsg',                        s:green,    '',         '')
 call s:HL('MoreMsg',                        s:green,    '',         '')
 call s:HL('NonText',                        s:gray4,    '',         'none')
 call s:HL('Normal',                         s:gray5,    s:gray1,    'none')
-call s:HL('Pmenu',                          s:gray5,    s:gray3,    '')
+call s:HL('Pmenu',                          s:gray5,    '#3E3859',    '')
 call s:HL('PmenuSbar',                      '',         s:gray2,    '')
 call s:HL('PmenuSel',                       s:gray2,    s:cyan,     '')
 call s:HL('PmenuThumb',                     '',         s:gray4,    '')
@@ -93,7 +85,7 @@ call s:HL('TabLine',                        s:gray4,    s:gray1,    'none')
 call s:HL('TabLineFill',                    s:gray4,    s:gray2,    'none')
 call s:HL('TabLineSel',                     s:yellow,   s:gray3,    'none')
 call s:HL('Title',                          s:green,    '',         'none')
-call s:HL('VertSplit',                      '#2D2B40',    s:gray1,    'none')
+call s:HL('VertSplit',                      s:gray6,    s:gray1,    'none')
 call s:HL('Visual',                         s:gray5,    s:gray3,    '')
 call s:HL('WarningMsg',                     s:red,      '',         '')
 call s:HL('WildMenu',                       s:gray2,    s:cyan,	    '')
