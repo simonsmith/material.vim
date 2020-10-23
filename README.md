@@ -1,26 +1,15 @@
 # material.vim
 
-A dark color scheme for Vim/Neovim based on the [Material](https://github.com/equinusocio/material-theme) color scheme. This is a fork and is built on the fantastic work done in the [palenight.vim](https://github.com/drewtempelmeyer/palenight.vim) and [quantum](https://github.com/tyrannicaltoucan/vim-quantum) color schemes.
+A dark color scheme for Vim/Neovim forked from the [Material](https://github.com/kaicataldo/material.vim) color scheme. This is my own customised version with some additional influence from [Embark](https://embark-theme.github.io/).
 
-## Screenshots
-
-### Default
-
-![](https://raw.githubusercontent.com/kaicataldo/material.vim/master/screenshots/material.png)
-
-### Dark
-
-![](https://raw.githubusercontent.com/kaicataldo/material.vim/master/screenshots/material-dark.png)
-
-### Palenight
-
-![](https://raw.githubusercontent.com/kaicataldo/material.vim/master/screenshots/material-palenight.png)
+![](./screenshots/editor.png)
 
 ## Installation
+
 Using [vim-plug](https://github.com/junegunn/vim-plug) (modify this to work with your Vim package manager of choice):
 
 ```vim
-Plug 'kaicataldo/material.vim'
+Plug 'simonsmith/material.vim'
 ```
 
 ## Usage
@@ -29,7 +18,7 @@ To enable this color scheme, add the following to your Vim (`~/.vimrc`) or Neovi
 
 ```vim
 set background=dark
-colorscheme material 
+colorscheme material
 ```
 
 ### True Colors
@@ -50,20 +39,12 @@ if (has("termguicolors"))
 endif
 ```
 
-### Theme
-
-There are three theme options - `default`, `palenight`, and `dark` (defaulting to `default`). This can be configured as follows:
-
-```vim
-let g:material_theme_style = 'default' | 'palenight' | 'dark'
-```
-
 ### Italics
 
-To turn on italics, configure as follows:
+To turn off italics, configure as follows:
 
 ```vim
-let g:material_terminal_italics = 1
+let g:material_terminal_italics = 0
 ```
 
 ### vim-airline & lightline.vim
