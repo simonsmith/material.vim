@@ -70,8 +70,8 @@ call s:HL('MoreMsg',                        s:green,    '',         '')
 call s:HL('NonText',                        s:gray4,    '',         'none')
 call s:HL('Normal',                         s:gray5,    s:gray1,    'none')
 call s:HL('Pmenu',                          s:gray5,    '#3E3859',    '')
-call s:HL('PmenuSbar',                      '',         s:gray2,    '')
-call s:HL('PmenuSel',                       s:gray2,    s:cyan,     '')
+call s:HL('PmenuSbar',                      s:gray1,         '#100E23',    '')
+call s:HL('PmenuSel',                       s:gray2,    '#91DDFF',     '')
 call s:HL('PmenuThumb',                     '',         s:gray4,    '')
 call s:HL('Question',                       s:blue,     '',         'none')
 call s:HL('Search',                         s:gray1,    s:yellow,   '')
@@ -91,7 +91,7 @@ call s:HL('WarningMsg',                     s:red,      '',         '')
 call s:HL('WildMenu',                       s:gray2,    s:cyan,	    '')
 
 " Standard Syntax
-call s:HL('Comment',                        s:gray4,    '',         'italic')
+call s:HL('Comment',                        '#7f7999',    '',         '')
 call s:HL('Constant',                       s:orange,   '',         '')
 call s:HL('String',                         s:green,    '',         '')
 call s:HL('Character',                      s:green,    '',         '')
@@ -108,7 +108,7 @@ call s:HL('Structure',                      s:cyan,     '',         '')
 call s:HL('Special',                        s:indigo,   '',         '')
 call s:HL('Underlined',                     s:blue,     '',         'none')
 call s:HL('Error',                          s:red,      s:gray1,    '')
-call s:HL('Todo',                           s:orange,   s:gray1,    'italic')
+call s:HL('Todo',                           s:orange,   s:gray1,    '')
 
 " CSS
 call s:HL('cssAttrComma',                   s:gray5,    '',         '')
@@ -237,6 +237,8 @@ call s:HL('GitGutterDelete',                s:red,      '',         '')
 " TypeScript
 call s:HL('typescriptBraces',                   s:gray5,    '',         '')
 call s:HL('typescriptObjectLabel',              s:gray5,    '',         '')
+call s:HL('typescriptDestructureVariable',              s:gray5,    '',         '')
+call s:HL('typescriptDestructureLabel',              s:gray5,    '',         '')
 
 " Vim-Signify
 hi link SignifySignAdd GitGutterAdd
