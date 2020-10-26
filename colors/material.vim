@@ -148,7 +148,7 @@ call s:HL('htmlLink',                       s:red,      '',         '')
 call s:HL('htmlTag',                        s:blue,     '',         '')
 call s:HL('htmlTitle',                      s:gray5,    '',         '')
 call s:HL('htmlSpecialTagName',             s:purple,   '',         '')
-call s:HL('htmlArg',                        s:yellow,   '',         'italic')
+call s:HL('htmlArg',                        s:yellow,   '',         '')
 
 " Javascript
 call s:HL('javaScriptBraces',               s:gray5,    '',         '')
@@ -239,7 +239,6 @@ call s:HL('typescriptBraces',                   s:gray5,    '',         '')
 call s:HL('typescriptObjectLabel',              s:gray5,    '',         '')
 call s:HL('typescriptDestructureVariable',              s:gray5,    '',         '')
 call s:HL('typescriptDestructureLabel',              s:gray5,    '',         '')
-call s:HL('typescriptMember',              s:gray5,    '',         '')
 
 " Vim-Signify
 hi link SignifySignAdd GitGutterAdd
@@ -247,7 +246,7 @@ hi link SignifySignChange GitGutterChange
 hi link SignifySignDelete GitGutterDelete
 
 " XML
-call s:HL('xmlAttrib',                      s:yellow,   '',         'italic')
+call s:HL('xmlAttrib',                      s:yellow,   '',         '')
 call s:HL('xmlEndTag',                      s:blue,     '',         '')
 call s:HL('xmlTag',                         s:red,     '',         '')
 call s:HL('xmlTagName',                     s:red,     '',         '')
