@@ -240,6 +240,13 @@ call s:HL('typescriptObjectLabel',              s:gray5,    '',         '')
 call s:HL('typescriptDestructureVariable',              s:gray5,    '',         '')
 call s:HL('typescriptDestructureLabel',              s:gray5,    '',         '')
 call s:HL('typescriptMember',              s:gray5,    '',         '')
+call s:HL('typescriptEndColons',              s:gray5,    '',         '')
+call s:HL('typescriptFuncComma',              s:gray5,    '',         '')
+call s:HL('typescriptOptionalMark',              s:gray5,    '',         '')
+call s:HL('typescriptCall',              s:gray5,    '',         '')
+
+" jsx
+call s:HL('jsxBraces',              s:gray5,    '',         '')
 
 " Vim-Signify
 hi link SignifySignAdd GitGutterAdd
